@@ -86,7 +86,10 @@ function getAllContact() {
     return JSON.parse(localStorage.getItem('store')) || [];
 }
 
-function searchContact() {
-
+function searchContact(search) {
+    const contacts =  getAllContact();
+    return contacts.filter(c => `${c.name} ${c.email} ${c.mobileNumber}`.includes(search));
 }
+
+
 

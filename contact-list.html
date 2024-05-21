@@ -24,7 +24,7 @@
         <main>
             <!-- <form> -->
                 <div class="input-group">
-                    <input type="text" name="search" placeholder="Search">
+                    <input id="searchbar" type="text" name="search" placeholder="Search">
                     <i class="fa fa-search"></i>
                 </div>
                 <!-- <input type="number" name="mobileNumber" placeholder="Mobile Number">
@@ -35,10 +35,53 @@
                 </div> -->
             <!-- </form> -->
             <button type="button" class="btn">Add New Contact</button>
-
+                <ul id="contact-list">
+                        
+                </ul>
         </main>
     </div>
     <script src="./contact-form.js"></script>
+    <script>
+        const listEl = document.getElementById('contact-list');
+        if(listEl) {
+            const contacts = getAllContact();
+           updateDisplay(contacts)
+        }
+
+        function createListItem(text) {
+            const li = document.createElement('li');
+            li.innerText = text;
+            return li;
+        }
+
+        const searchbar = document.getElementById('searchbar');
+        if(searchbar) {
+            searchbar.addEventListener('keyup', function(event) {
+                const filterContact = searchContact(event.target.value);
+                updateDisplay(filterContact);
+            })
+        }
+
+        function updateDisplay(contacts) {
+            listEl.innerHTML = '';
+            const sortedContact = contacts.sort((a,b) => {
+                const nameA = a.name.toLowerCase();
+                const nameB = b.name.toLowerCase();
+                if(nameA > nameB) {
+                    return 1;
+                }
+
+                if(nameA < nameB) {
+                    return -1
+                }
+            })
+
+            sortedContact.sort((a,b) => a.name - b.name).forEach(contact => {
+                const li = createListItem(contact.name);
+                listEl.append(li);
+            });
+        }
+    </script>
 </body>
 
 </html>
