@@ -27,7 +27,8 @@
                 <input type="number" name="mobileNumber" placeholder="Mobile Number">
                 <input type="text" name="email" placeholder="Email Address">
                 <div class="btn-container">
-                    <button type="button" class="delete"><i class="fa-solid fa-trash"></i>&nbsp;Delete</button>
+                    <button type="button" class="cancel"> &nbsp;<a href="contact-list.html">Cancel</a></button>
+                   
                     <button type="button" class="update"><i class="fa fa-user-plus"></i>&nbsp;Update Contact</button>
                 </div>
             </form>
@@ -70,11 +71,7 @@
             window.location.href = ('view-form.html?id=' + id);
         });
         
-        document.querySelector('.delete').addEventListener('click', function() {
-            const id = window.location.search.split('=')[1];
-            deleteContactById(id);
-            window.location.replace('contact-list.html'); // Redirect to contact list after deletion
-        });
+
             </script>
 </body>
 

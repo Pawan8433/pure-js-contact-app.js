@@ -75,7 +75,10 @@
         <div class="username"><i class="fa-solid fa-user"></i>&nbsp;<span id="Name"></span></div>
         <div class="phone"><span>Mobile Number</span><span id="Phone"></span></div>
         <div class="email"><span>Email Address</span><span id="Mail"></span></div>
-        <div class="btn"><span><button type="button" class="cancel"> &nbsp;<a href="contact-list.html">Cancel</a></button><button type="button" class="edit"><a ><i class="fa-solid fa-user-pen"></i> Edit Contact</a></button></span></div>
+        <div class="btn"><span>
+            <button type="button" class="delete"><i class="fa-solid fa-trash"></i>&nbsp;Delete</button>
+            <button type="button" class="edit"><a ><i class="fa-solid fa-user-pen"></i> Edit Contact</a></button>
+        </span></div>
     </div>
     <script src="contact-form.js"></script>
 </body>
@@ -102,6 +105,11 @@
     addToDisplay("Name",name);
     addToDisplay("Phone",mobileNumber);
     addToDisplay("Mail",email);
+    document.querySelector('.delete').addEventListener('click', function() {
+            const id = window.location.search.split('=')[1];
+            deleteContactById(id);
+            window.location.replace('contact-list.html'); // Redirect to contact list after deletion
+        });
 
 </script>
 
