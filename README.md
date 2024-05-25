@@ -10,8 +10,6 @@ This project is a simple contacts management application where users can add, vi
 - [Setup](#setup)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
   
 ## Demo
@@ -47,14 +45,14 @@ To get started with the project, follow these steps:
 ## Usage
 To use the contact management application:
 
-1. Open `contact-form.html` in your web browser.
+1. Open `contact-list.html` in your web browser.
 
 2. Use the provided interface to add, view, edit, and search for contacts.
 
 ## Project Structure
 The project structure is as follows:
 
-- `contact-form.html`: Main page displaying the list of contacts and search bar.
+- `contact-list.html`: Main page displaying the list of contacts and search bar.
 - `contact-form.html`: Form to add a new contact.
 - `edit-contact.html`: Form to edit an existing contact.
 - `view-form.html`: Page to view the details of a contact.
