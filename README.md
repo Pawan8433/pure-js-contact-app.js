@@ -47,11 +47,23 @@ To get started with the project, follow these steps:
 ## Usage
 To use the contact management application:
 
-1. Open `index.html` in your web browser.
+1. Open `contact-form.html` in your web browser.
 
 2. Use the provided interface to add, view, edit, and search for contacts.
 
 ## Project Structure
 The project structure is as follows:
+
+- `contact-form.html`: Main page displaying the list of contacts and search bar.
+- `contact-form.html`: Form to add a new contact.
+- `edit-contact.html`: Form to edit an existing contact.
+- `view-form.html`: Page to view the details of a contact.
+- `style.css`: CSS file for styling the application.
+- `contact-form.js`: JavaScript file containing functions for contact management.
+- `README.md`: Documentation file providing information about the project.
+
+Feel free to explore and modify the project structure to suit your needs.
+
+
 
 
