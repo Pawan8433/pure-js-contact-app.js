@@ -14,7 +14,7 @@ This project is a simple contacts management application where users can add, vi
 - [License](#license)
 
 ## Demo
-A live demo of the project can be found [here](#).
+A live demo of the project can be found [here](#https://pawan8433.github.io/pure-js-contact-app.js/contact-form.html).
 
 ## Features
 - Add new contacts
@@ -33,5 +33,5 @@ A live demo of the project can be found [here](#).
 To get started with the project, clone the repository and open the project files in your browser.
 
 ```bash
-git clone https://github.com/your-username/contacts-management.git
-cd contacts-management
+git clone https://github.com/Pawan8433/pure-js-contact-app.js.git
+cd pure-js-contact-app.js
