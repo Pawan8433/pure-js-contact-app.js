@@ -13,8 +13,10 @@ This project is a simple contacts management application where users can add, vi
 - [Contributing](#contributing)
 - [License](#license)
 
+  
 ## Demo
-A live demo of the project can be found [here](#https://pawan8433.github.io/pure-js-contact-app.js/contact-form.html).
+A live demo of the project can be found [here](https://pawan8433.github.io/pure-js-contact-app.js/contact-form.html).
+
 
 ## Features
 - Add new contacts
